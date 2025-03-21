@@ -32,3 +32,5 @@ You can reach out to me through the following:
 - **Email**: [fwaseem693@gmail.com](mailto:fwaseem693@gmail.com)
 - **LinkedIn**: [Fahad Waseem LinkedIn](https://www.linkedin.com/in/fahad-waseem-567947320/)
 - **GitHub**: [Fahad Waseem GitHub](https://github.com/fahad-waseem247)
+
+Live Portfolio URL: [Live Portfolio](https://fahad-waseem247.github.io/fahad-portfolio-website/)
