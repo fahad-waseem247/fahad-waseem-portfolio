@@ -1,0 +1,634 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* Navbar */
+.navbar {
+    background-color: #222831; /* Dark Gray */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #393E46; /* Charcoal Gray */
+    color: #ffffff;
+}
+
+/* About Section */
+#about {
+    background-color: #EEEEEE; /* Light Gray */
+    padding: 80px 0;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #F8F9FA; /* Teal Blue */
+    padding: 80px 0;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #F8F9FA; /* Off White */
+    padding: 80px 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color:#F8F9FA; /* Dark Gray */
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar-brand:hover {
+    color: #0066ff;
+}
+
+/* Navbar Logo Styling */
+.profile-logo {
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 10px; 
+    border: 2px solid #fff; 
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 1.1rem;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #0066ff !important;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/assets/hro.jpg'); /* You can replace this with your custom background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with opacity */
+}
+
+.hero-content {
+    z-index: 2;
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Social Links */
+.social-links a {
+    color: white;
+    font-size: 1.3rem;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0066ff; /* Blue hover color */
+    transform: translateY(-5px); /* Slight upward movement */
+}
+
+.social-links a:focus {
+    outline: none; /* Remove the default focus outline */
+}
+
+/* About Section */
+.about {
+    padding: 60px 0;
+    background-color: #f8f9fa; /* Lighter background for a cleaner look */
+}
+
+.about h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333; /* Darker text for readability */
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #555; /* Slightly lighter text for better readability */
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card .card-body {
+    padding: 20px;
+}
+
+.interests {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.interests li {
+    margin: 5px 15px;
+    font-weight: bold;
+    color: #007bff; /* Blue color for the interests */
+}
+
+.interests li:hover {
+    color: #0056b3; /* Darker blue when hovered */
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about h2 {
+        font-size: 2.4rem;
+    }
+
+    .about p {
+        font-size: 1.1rem;
+    }
+
+    .interests {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Education Section */
+.education {
+    padding: 60px 0;
+    background-color: #f1f1f1;
+}
+
+.education h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card .card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.card h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Blue color for the headings */
+}
+
+.card p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .education h2 {
+        font-size: 2.4rem;
+    }
+
+    .card h4 {
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+}
+
+/* Skills Section Styling */
+.skills {
+    padding: 60px 10px;
+    background-color: #f8f9fa;
+}
+
+.skills h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.skill-card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image Styling */
+.skill-card img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Card Title Styling */
+.skill-card .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 2.5rem;
+    }
+
+    .skill-card img {
+        max-width: 70px;
+    }
+}
+
+
+/* Projects Section */
+.projects {
+    padding: 80px 0;  /* Increased padding for better spacing */
+    background-color: #f8f9fa;  /* Slight off-white background for a cleaner look */
+}
+
+.projects h2 {
+    font-size: 3rem;  /* Larger heading */
+    font-weight: 700;  /* Bold font */
+    color: #333;  /* Dark text color for better readability */
+    margin-bottom: 40px;  /* More space between heading and projects */
+    text-align: center;  /* Centered heading */
+}
+
+.card {
+    border-radius: 8px;  /* Rounded corners for modern design */
+    border: 1px solid #ddd;  /* Light border for each card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);  /* Subtle shadow effect */
+    overflow: hidden;  /* Ensures content doesn't overflow the rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);  /* Smooth hover effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);  /* Darker shadow on hover for depth */
+}
+
+.card-img-top {
+    object-fit: cover;  /* Ensures images cover the card width/height without distortion */
+    height: 200px;  /* Fixed image height for consistency */
+}
+
+.card-body {
+    padding: 25px;  /* More padding inside the card */
+    background-color: #fff;  /* White background for text content */
+}
+
+.card-title {
+    font-size: 1.8rem;  /* Consistent, readable size */
+    font-weight: 600;  /* Bold title */
+    margin-bottom: 15px;  /* Spacing below title */
+    color: #333;  /* Dark text color */
+}
+
+.card-text {
+    font-size: 1.1rem;  /* Readable font size */
+    color: #555;  /* Slightly lighter text for better contrast */
+    margin-bottom: 20px;  /* Spacing between description and link */
+}
+
+.btn-primary {
+    background-color: #007bff;  /* Primary blue color */
+    color: #fff;  /* White text on the button */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    text-decoration: none;  /* Remove underline from the link */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+    text-decoration: none;  /* Ensures no underline on hover */
+}
+
+@media (max-width: 767px) {
+    .card-img-top {
+        height: 150px;  /* Smaller images on mobile */
+    }
+
+    .card-body {
+        padding: 20px;  /* Less padding on mobile for compactness */
+    }
+}
+/* Contact Section Styling */
+.contact {
+    padding: 80px 0; /* Increased padding for more spacing */
+    background-color: #f8f9fa; /* Light background for clean look */
+}
+
+.contact h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px; /* More space for better balance */
+}
+
+.contact form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.contact form .form-control {
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 15px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease; /* Smooth border color change */
+}
+
+.contact form .form-control:focus {
+    border-color: #007bff; /* Blue border on focus for better visibility */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle shadow on focus */
+}
+
+.contact form button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+.contact form .btn:focus {
+    outline: none; /* Removes focus outline */
+}
+
+@media (max-width: 767px) {
+    .contact form {
+        padding: 20px; /* Reduced padding on mobile */
+    }
+    .contact h2 {
+        font-size: 2.2rem; /* Adjusted font size on mobile */
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 60px 0;
+}
+
+/* Footer Logo */
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-logo-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 4px solid #007bff; /* Border color for visual emphasis */
+}
+
+footer p {
+    font-size: 1.2rem; /* Slightly larger font for your name */
+    font-weight: 600;
+    margin-top: 10px;
+    color: #007bff;
+}
+
+/* Social Links */
+.social-links a {
+    color: #fff;
+    font-size: 1.4rem; /* Larger icons */
+    margin: 0 20px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+    transform: translateY(-5px); /* Subtle lift effect */
+}
+
+/* Back to Top Link */
+footer .mt-4 a {
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+footer .mt-4 a:hover {
+    color: #0056b3; /* Hover effect */
+}
+
+footer .mt-4 i {
+    margin-left: 8px;
+    font-size: 1.3rem;
+}
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    footer p {
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem; /* Adjust size for smaller screens */
+        margin: 0 15px;
+    }
+
+    footer .mt-4 a {
+        font-size: 1rem; /* Adjust text size for mobile */
+    }
+
+    .footer-logo-img {
+        width: 80px;
+        height: 80px; /* Smaller image size for mobile */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.1rem;
+    }
+
+    .skills img {
+        width: 50px;
+    }
+
+    .projects h2 {
+        font-size: 2.2rem;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .contact h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .social-links a {
+        font-size: 1.1rem;
+        margin: 0 5px;
+    }
+
+    .contact-form .form-control {
+        font-size: 1rem;
+    }
+
+    .contact button {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+}
